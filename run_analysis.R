@@ -10,8 +10,7 @@
 #     of each variable for each activity and each subject. √
 
 getwd()
-setwd("/Users/noemiglarner/Documents/MD-PhD CRIB/Education/Statistics/
-      Data Science Specialization (coursera.org)/Module 3 - Getting and Cleaning Data/data/UCI HAR Dataset/")
+setwd()
 
 # Read in data
 activity <- read.table("activity_labels.txt")
