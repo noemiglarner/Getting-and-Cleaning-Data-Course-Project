@@ -80,4 +80,4 @@ tidy_data <- df2 %>%
 
 # Output file
 write.csv(tidy_data, file = "tidy_data.csv")
-write.table(tidy_data, file = "tidy_data.txt")
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE)
