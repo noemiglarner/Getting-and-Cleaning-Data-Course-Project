@@ -1,8 +1,8 @@
 # Getting-and-Cleaning-Data-Course-Project
 
 This repository contains: 
-- README.md: overview over study and the anylsis of the data
-- CodeBook.md: describing the features of the data set
+- ReadMe: overview over study and the anylsis of the data
+- CodeBook: describing the features of the data set
 - tidy_data.csv and .txt: containing the tidy data set
 - run_analysis.R: containing the used R script
 
