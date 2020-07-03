@@ -1,0 +1,124 @@
+# CodeBook
+
+This code book summarises the resulst of the tidy_data files.
+
+The tidy_data file exists both as a .txt file and a .csv file.
+
+The first row of the data contains the variable names, which are further explained below, and the following rows contain the values of these variables.
+
+Each row contains for a given subject and its activity 79 measurements.
+
+Subject:
+Subject identifier, ranges from 1-30
+
+Activity:
+Activity identifier, 6 levels
+- WALKING
+- WALKING_UPSTAIRS
+- WALKING_DOWNSTAIRS
+- SITTING
+- STANDING
+- LAYING
+
+Group:
+Group identifier, 2 levels
+- Train
+- Test
+The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+Measurements:                                              
+- TimeBodyAccelerometerMeanX
+- TimeBodyAccelerometerMeanY                             
+- TimeBodyAccelerometerMeanZ
+- TimeBodyAccelerometerStandardDeviationX                
+- TimeBodyAccelerometerStandardDeviationY
+- TimeBodyAccelerometerStandardDeviationZ               
+- TimeGravityAccelerometerMeanX
+- TimeGravityAccelerometerMeanY                          
+- TimeGravityAccelerometerMeanZ   
+- TimeGravityAccelerometerStandardDeviationX              
+- TimeGravityAccelerometerStandardDeviationY
+- TimeGravityAccelerometerStandardDeviationZ              
+- TimeBodyAccelerometerJerkMeanX            
+- TimeBodyAccelerometerJerkMeanY                          
+- TimeBodyAccelerometerJerkMeanZ  
+- TimeBodyAccelerometerJerkStandardDeviationX            
+- TimeBodyAccelerometerJerkStandardDeviationY
+- TimeBodyAccelerometerJerkStandardDeviationZ        
+- TimeBodyGyroscopeMeanX                     
+- TimeBodyGyroscopeMeanY                              
+- TimeBodyGyroscopeMeanZ
+- TimeBodyGyroscopeStandardDeviationX
+- TimeBodyGyroscopeStandardDeviationY
+- TimeBodyGyroscopeStandardDeviationZ                     
+- TimeBodyGyroscopeJerkMeanX           
+- TimeBodyGyroscopeJerkMeanY                              
+- TimeBodyGyroscopeJerkMeanZ
+- TimeBodyGyroscopeJerkStandardDeviationX
+- TimeBodyGyroscopeJerkStandardDeviationY
+- TimeBodyGyroscopeJerkStandardDeviationZ                 
+- TimeBodyAccelerometerMagnitudeMean     
+- TimeBodyAccelerometerMagnitudeStandardDeviation         
+- TimeGravityAccelerometerMagnitudeMean          
+- TimeGravityAccelerometerMagnitudeStandardDeviation      
+- TimeBodyAccelerometerJerkMagnitudeMean            
+- TimeBodyAccelerometerJerkMagnitudeStandardDeviation     
+- TimeBodyGyroscopeMagnitudeMean                     
+- TimeBodyGyroscopeMagnitudeStandardDeviation           
+- TimeBodyGyroscopeJerkMagnitudeMean         
+- TimeBodyGyroscopeJerkMagnitudeStandardDeviation      
+- FrequencyBodyAccelerometerMeanX                
+- FrequencyBodyAccelerometerMeanY                         
+- FrequencyBodyAccelerometerMeanZ
+- FrequencyBodyAccelerometerStandardDeviationX            
+- FrequencyBodyAccelerometerStandardDeviationY  
+- FrequencyBodyAccelerometerStandardDeviationZ            
+- FrequencyBodyAccelerometerMeanFreqX         
+- FrequencyBodyAccelerometerMeanFreqY
+- FrequencyBodyAccelerometerMeanFreqZ         
+- FrequencyBodyAccelerometerJerkMeanX                     
+- FrequencyBodyAccelerometerJerkMeanY     
+- FrequencyBodyAccelerometerJerkMeanZ                     
+- FrequencyBodyAccelerometerJerkStandardDeviationX  
+- FrequencyBodyAccelerometerJerkStandardDeviationY        
+- FrequencyBodyAccelerometerJerkStandardDeviationZ     
+- FrequencyBodyAccelerometerJerkMeanFreqX                 
+- FrequencyBodyAccelerometerJerkMeanFreqY
+- FrequencyBodyAccelerometerJerkMeanFreqZ                
+- FrequencyBodyGyroscopeMeanX            
+- FrequencyBodyGyroscopeMeanY                             
+- FrequencyBodyGyroscopeMeanZ
+- FrequencyBodyGyroscopeStandardDeviationX                
+- FrequencyBodyGyroscopeStandardDeviationY   
+- FrequencyBodyGyroscopeStandardDeviationZ               
+- FrequencyBodyGyroscopeMeanFreqX           
+- FrequencyBodyGyroscopeMeanFreqY                         
+- FrequencyBodyGyroscopeMeanFreqZ          
+- FrequencyBodyAccelerometerMagnitudeMean                
+- FrequencyBodyAccelerometerMagnitudeStandardDeviation
+- FrequencyBodyAccelerometerMagnitudeMeanFreq             
+- FrequencyBodyAccelerometerJerkMagnitudeMean
+- FrequencyBodyAccelerometerJerkMagnitudeStandardDeviation
+- FrequencyBodyAccelerometerJerkMagnitudeMeanFreq
+- FrequencyBodyGyroscopeMagnitudeMean                    
+- FrequencyBodyGyroscopeMagnitudeStandardDeviation
+- FrequencyBodyGyroscopeMagnitudeMeanFreq
+- FrequencyBodyGyroscopeJerkMagnitudeMean
+- FrequencyBodyGyroscopeJerkMagnitudeStandardDeviation 
+- FrequencyBodyGyroscopeJerkMagnitudeMeanFreq
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+These time domain signals were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals 
+(tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm 
+(tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing 
+fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
